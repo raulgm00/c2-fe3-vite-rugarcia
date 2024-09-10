@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useRecipeStates } from "../Context/Context";
 
 const Card = ({ recipe }) => {
+  // console.table(recipe);
   const { id, image, title, pricePerServing } = recipe;
   const { dispatch } = useRecipeStates();
   return (
